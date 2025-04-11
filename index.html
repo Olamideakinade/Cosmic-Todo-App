@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cosmic Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- created by mhidedev -->
+    <!-- created by enjoy -->
+</head>
+<body>
+    <div class="todo-container">
+        <div class="todo-header">
+            <h1>Cosmic Todo</h1>
+            <div class="input-area">
+                <input type="text" id="todoInput" placeholder="What needs to be done?">
+                <button id="addTodo">Add Task</button>
+            </div>
+        </div>
+        <div class="filter-controls">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+        <ul id="todoList" class="todo-list"></ul>
+        <div class="todo-footer">
+            <span id="taskCount">0 items left</span>
+            <button id="clearCompleted">Clear Completed</button>
+        </div>
+    </div>
+    <div class="cosmic-background"></div>
+    <script src="app.js"></script>
+</body>
+</html>
